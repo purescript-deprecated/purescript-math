@@ -17,6 +17,24 @@ module.exports = function(grunt) {
                     , "bower_components/purescript-*/src/**/*.purs"
                     ]
             }
+        },
+        
+        purescript: {
+            options: {
+                tco: true,
+                magicDo: true
+            },
+            "test-simple": {
+                options: { 
+                    main: true
+                },
+                dest: "js/_examples/simple.js",
+                src:
+                    [ "examples/Simple.purs.hs"
+                    , "src/**/*.purs"
+                    , "bower_components/purescript-*/src/**/*.purs"
+                    ]
+            }
         }
         
     });
