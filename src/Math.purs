@@ -1,23 +1,25 @@
 module Math where
 
+type Radians = Number
+
 foreign import abs "var abs = Math.abs;" :: Number -> Number
 
-foreign import acos "var acos = Math.acos;" :: Number -> Number
+foreign import acos "var acos = Math.acos;" :: Number -> Radians
 
-foreign import asin "var asin = Math.asin;" :: Number -> Number
+foreign import asin "var asin = Math.asin;" :: Number -> Radians
 
-foreign import atan "var atan = Math.atan;" :: Number -> Number
+foreign import atan "var atan = Math.atan;" :: Number -> Radians
 
 foreign import atan2
   "function atan2(y){\
   \  return function (x) {\
   \    return Math.atan2(y, x);\
   \  };\
-  \}" :: Number -> Number -> Number
+  \}" :: Number -> Number -> Radians
 
 foreign import ceil "var ceil = Math.ceil;" :: Number -> Number
 
-foreign import cos "var cos = Math.cos;" :: Number -> Number
+foreign import cos "var cos = Math.cos;" :: Radians -> Number
 
 foreign import exp "var exp = Math.exp;" :: Number -> Number
 
@@ -48,11 +50,11 @@ foreign import pow
 
 foreign import round "var round = Math.round;" :: Number -> Number
 
-foreign import sin "var sin = Math.sin;" :: Number -> Number
+foreign import sin "var sin = Math.sin;" :: Radians -> Number
 
 foreign import sqrt "var sqrt = Math.sqrt;" :: Number -> Number
 
-foreign import tan "var tan = Math.tan;" :: Number -> Number
+foreign import tan "var tan = Math.tan;" :: Radians -> Number
 
 foreign import e       "var e       = Math.E;"       :: Number
 foreign import ln2     "var ln2     = Math.LN2;"     :: Number
