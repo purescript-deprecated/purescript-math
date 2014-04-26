@@ -58,6 +58,3 @@
     sqrt2 :: Prim.Number
 
     tan :: Radians -> Prim.Number
-
-
-
