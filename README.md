@@ -4,57 +4,57 @@
 
 ### Types
 
-    type Radians  = Prim.Number
+    type Radians  = Number
 
 
 ### Values
 
-    abs :: Prim.Number -> Prim.Number
+    abs :: Number -> Number
 
-    acos :: Prim.Number -> Radians
+    acos :: Number -> Radians
 
-    asin :: Prim.Number -> Radians
+    asin :: Number -> Radians
 
-    atan :: Prim.Number -> Radians
+    atan :: Number -> Radians
 
-    atan2 :: Prim.Number -> Prim.Number -> Radians
+    atan2 :: Number -> Number -> Radians
 
-    ceil :: Prim.Number -> Prim.Number
+    ceil :: Number -> Number
 
-    cos :: Radians -> Prim.Number
+    cos :: Radians -> Number
 
-    e :: Prim.Number
+    e :: Number
 
-    exp :: Prim.Number -> Prim.Number
+    exp :: Number -> Number
 
-    floor :: Prim.Number -> Prim.Number
+    floor :: Number -> Number
 
-    ln10 :: Prim.Number
+    ln10 :: Number
 
-    ln2 :: Prim.Number
+    ln2 :: Number
 
-    log :: Prim.Number -> Prim.Number
+    log :: Number -> Number
 
-    log10e :: Prim.Number
+    log10e :: Number
 
-    log2e :: Prim.Number
+    log2e :: Number
 
-    max :: Prim.Number -> Prim.Number -> Prim.Number
+    max :: Number -> Number -> Number
 
-    min :: Prim.Number -> Prim.Number -> Prim.Number
+    min :: Number -> Number -> Number
 
-    pi :: Prim.Number
+    pi :: Number
 
-    pow :: Prim.Number -> Prim.Number -> Prim.Number
+    pow :: Number -> Number -> Number
 
-    round :: Prim.Number -> Prim.Number
+    round :: Number -> Number
 
-    sin :: Radians -> Prim.Number
+    sin :: Radians -> Number
 
-    sqrt :: Prim.Number -> Prim.Number
+    sqrt :: Number -> Number
 
-    sqrt1_2 :: Prim.Number
+    sqrt1_2 :: Number
 
-    sqrt2 :: Prim.Number
+    sqrt2 :: Number
 
-    tan :: Radians -> Prim.Number
+    tan :: Radians -> Number
