@@ -47,6 +47,14 @@ foreign import pow
   \    return Math.pow(n, p);\
   \  }\
   \}" :: Number -> Number -> Number
+  
+foreign import toFixed """
+  function toFixed(decimal){
+    return function(n){
+      return n.toFixed(decimal);
+    };
+  }
+""" :: Number -> Number -> Number
 
 foreign import round "var round = Math.round;" :: Number -> Number
 
