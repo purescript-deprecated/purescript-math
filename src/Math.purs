@@ -54,7 +54,7 @@ foreign import toFixed """
       return n.toFixed(decimal);
     };
   }
-""" :: Number -> Number -> Number
+""" :: Number -> Number -> String
 
 foreign import round "var round = Math.round;" :: Number -> Number
 
