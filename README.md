@@ -4,6 +4,7 @@
 
 
 Wraps the math functions and constants from Javascript's built-in `Math` object.
+See [Math Documentation at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
 
 #### `Radians`
 
