@@ -28,7 +28,7 @@ Returns the absolute value of the argument.
 acos :: Number -> Radians
 ```
 
-Returns the arccosine of the argument.
+Returns the inverse cosine of the argument.
 
 #### `asin`
 
@@ -36,7 +36,7 @@ Returns the arccosine of the argument.
 asin :: Number -> Radians
 ```
 
-Returns the arcsine of the argument.
+Returns the inverse sine of the argument.
 
 #### `atan`
 
@@ -44,7 +44,7 @@ Returns the arcsine of the argument.
 atan :: Number -> Radians
 ```
 
-Returns the arctangent of the argument.
+Returns the inverse tangent of the argument.
 
 #### `atan2`
 
@@ -52,12 +52,11 @@ Returns the arctangent of the argument.
 atan2 :: Number -> Number -> Radians
 ```
 
-Four-quadrant tangent inverse. Given `y` and `x`, returns the arctangent of
-`y / x`, where the signs of both arguments are used to determine the sign
-of the result.
+Four-quadrant tangent inverse. Given the arguments `y` and `x`, returns
+the inverse tangent of `y / x`, where the signs of both arguments are used
+to determine the sign of the result.
 If the first argument is negative, the result will be negative.
-The result is the counterclockwise angle between the positive x axis and
-the point `(x, y)`.
+The result is the angle between the positive x axis and  a point `(x, y)`.
 
 #### `ceil`
 
@@ -65,7 +64,7 @@ the point `(x, y)`.
 ceil :: Number -> Number
 ```
 
-Returns the smallest integer greater than or equal to the argument.
+Returns the smallest integer not smaller than the argument.
 
 #### `cos`
 
@@ -89,7 +88,7 @@ Returns `e` exponentiated to the power of the argument.
 floor :: Number -> Number
 ```
 
-Returns the largest integer less than or equal to the argument.
+Returns the largest integer not larger than the argument.
 
 #### `log`
 
@@ -129,7 +128,7 @@ Return  the first argument exponentiated to the power of the second argument.
 round :: Number -> Number
 ```
 
-Returns the integer nearest to the argument.
+Returns the integer closest to the argument.
 
 #### `sin`
 
@@ -161,7 +160,7 @@ Returns the tangent of the argument.
 e :: Number
 ```
 
-Euler's constant and the base of natural logarithms, approximately 2.718.
+The base of natural logarithms, *e*, around 2.71828.
 
 #### `ln2`
 
@@ -169,7 +168,7 @@ Euler's constant and the base of natural logarithms, approximately 2.718.
 ln2 :: Number
 ```
 
-Natural logarithm of 2, approximately 0.693.
+The natural logarithm of 2, around 0.6931.
 
 #### `ln10`
 
@@ -177,7 +176,7 @@ Natural logarithm of 2, approximately 0.693.
 ln10 :: Number
 ```
 
-Natural logarithm of 10, approximately 2.303.
+The natural logarithm of 10, around 2.3025.
 
 #### `log2e`
 
@@ -185,7 +184,7 @@ Natural logarithm of 10, approximately 2.303.
 log2e :: Number
 ```
 
-Base 2 logarithm of `e`, approximately 1.443.
+The base 2 logarithm of `e`, around 1.4426.
 
 #### `log10e`
 
@@ -193,7 +192,7 @@ Base 2 logarithm of `e`, approximately 1.443.
 log10e :: Number
 ```
 
-Base 10 logarithm of `e`, approximately 0.434.
+Base 10 logarithm of `e`, around 0.43429.
 
 #### `pi`
 
@@ -201,7 +200,7 @@ Base 10 logarithm of `e`, approximately 0.434.
 pi :: Number
 ```
 
-Ratio of the circumference of a circle to its diameter, approximately 3.14159.
+The ratio of the circumference of a circle to its diameter, around 3.14159.
 
 #### `sqrt1_2`
 
@@ -209,7 +208,7 @@ Ratio of the circumference of a circle to its diameter, approximately 3.14159.
 sqrt1_2 :: Number
 ```
 
-Square root of 1/2, approximately 0.707.
+The Square root of one half, around 0.707107.
 
 #### `sqrt2`
 
@@ -217,7 +216,7 @@ Square root of 1/2, approximately 0.707.
 sqrt2 :: Number
 ```
 
-Square root of 2, approximately 1.414.
+The square root of two, around 1.41421.
 
 
 
