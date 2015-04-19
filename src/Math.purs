@@ -23,11 +23,13 @@ foreign import atan "var atan = Math.atan;" :: Number -> Radians
 -- | If the first argument is negative, the result will be negative.
 -- | The result is the angle between the positive x axis and  a point `(x, y)`.
 foreign import atan2
-  "function atan2(y){\
-  \  return function (x) {\
-  \    return Math.atan2(y, x);\
-  \  };\
-  \}" :: Number -> Number -> Radians
+  """
+  function atan2(y){
+    return function (x) {
+      return Math.atan2(y, x);
+    };
+  }
+  """ :: Number -> Number -> Radians
 
 -- | Returns the smallest integer not smaller than the argument.
 foreign import ceil "var ceil = Math.ceil;" :: Number -> Number
@@ -46,27 +48,33 @@ foreign import log "var log = Math.log;" :: Number -> Number
 
 -- | Returns the largest of two numbers.
 foreign import max
-  "function max(n1){\
-  \  return function(n2) {\
-  \    return Math.max(n1, n2);\
-  \  }\
-  \}" :: Number -> Number -> Number
+  """
+  function max(n1){
+    return function(n2) {
+      return Math.max(n1, n2);
+    };
+  }
+  """ :: Number -> Number -> Number
 
 -- | Returns the smallest of two numbers.
 foreign import min
-  "function min(n1){\
-  \  return function(n2) {\
-  \    return Math.min(n1, n2);\
-  \  }\
-  \}" :: Number -> Number -> Number
+  """
+  function min(n1){
+    return function(n2) {
+      return Math.min(n1, n2);
+    };
+  }
+  """ :: Number -> Number -> Number
 
 -- | Return  the first argument exponentiated to the power of the second argument.
 foreign import pow
-  "function pow(n){\
-  \  return function(p) {\
-  \    return Math.pow(n, p);\
-  \  }\
-  \}" :: Number -> Number -> Number
+  """
+  function pow(n){
+    return function(p) {
+      return Math.pow(n, p);
+    };
+  }
+  """ :: Number -> Number -> Number
 
 -- | Returns the integer closest to the argument.
 foreign import round "var round = Math.round;" :: Number -> Number
@@ -81,25 +89,25 @@ foreign import sqrt "var sqrt = Math.sqrt;" :: Number -> Number
 foreign import tan "var tan = Math.tan;" :: Radians -> Number
 
 -- | The base of natural logarithms, *e*, around 2.71828.
-foreign import e       "var e       = Math.E;"       :: Number
+foreign import e "var e = Math.E;" :: Number
 
 -- | The natural logarithm of 2, around 0.6931.
-foreign import ln2     "var ln2     = Math.LN2;"     :: Number
+foreign import ln2 "var ln2 = Math.LN2;" :: Number
 
 -- | The natural logarithm of 10, around 2.3025.
-foreign import ln10    "var ln10    = Math.LN10;"    :: Number
+foreign import ln10 "var ln10 = Math.LN10;" :: Number
 
 -- | The base 2 logarithm of `e`, around 1.4426.
-foreign import log2e   "var log2e   = Math.LOG2E;"   :: Number
+foreign import log2e "var log2e = Math.LOG2E;" :: Number
 
 -- | Base 10 logarithm of `e`, around 0.43429.
-foreign import log10e  "var log10e  = Math.LOG10E;"  :: Number
+foreign import log10e "var log10e = Math.LOG10E;" :: Number
 
 -- | The ratio of the circumference of a circle to its diameter, around 3.14159.
-foreign import pi      "var pi      = Math.PI;"      :: Number
+foreign import pi "var pi = Math.PI;" :: Number
 
 -- | The Square root of one half, around 0.707107.
 foreign import sqrt1_2 "var sqrt1_2 = Math.SQRT1_2;" :: Number
 
 -- | The square root of two, around 1.41421.
-foreign import sqrt2   "var sqrt2   = Math.SQRT2;"   :: Number
+foreign import sqrt2 "var sqrt2 = Math.SQRT2;" :: Number
