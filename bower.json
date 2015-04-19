@@ -11,10 +11,8 @@
     "bower_components",
     "node_modules",
     "output",
-    "tests",
-    "tmp",
     "bower.json",
-    "Gruntfile.js",
+    "gulpfile.js",
     "package.json"
   ]
 }
