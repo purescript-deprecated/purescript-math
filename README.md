@@ -217,6 +217,3 @@ sqrt2 :: Number
 ```
 
 The square root of two, around 1.41421.
-
-
-
