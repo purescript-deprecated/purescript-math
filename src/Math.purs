@@ -2,8 +2,6 @@
 -- | See [Math Reference at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
 module Math where
 
-import Prelude
-
 -- | An alias to make types in this module more explicit.
 type Radians = Number
 

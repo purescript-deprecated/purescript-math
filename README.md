@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/purescript/purescript-math.svg?branch=master)](https://travis-ci.org/purescript/purescript-math)
 
-Math functions.
+Standard math functions from JavaScript.
 
 ## Installation
 

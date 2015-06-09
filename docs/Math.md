@@ -1,7 +1,4 @@
-# Module Documentation
-
 ## Module Math
-
 
 Wraps the math functions and constants from Javascript's built-in `Math` object.
 See [Math Reference at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
@@ -217,6 +214,5 @@ sqrt2 :: Number
 ```
 
 The square root of two, around 1.41421.
-
 
 

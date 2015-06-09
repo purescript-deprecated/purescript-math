@@ -11,12 +11,12 @@ exports.asin = Math.asin;
 
 exports.atan = Math.atan;
 
-exports.atan2 = function(y){
+exports.atan2 = function (y) {
   return function (x) {
     return Math.atan2(y, x);
   };
 };
-  
+
 exports.ceil = Math.ceil;
 
 exports.cos = Math.cos;
@@ -27,20 +27,20 @@ exports.floor = Math.floor;
 
 exports.log = Math.log;
 
-exports.max = function(n1){
-  return function(n2) {
+exports.max = function (n1) {
+  return function (n2) {
     return Math.max(n1, n2);
   };
 };
 
-exports.min = function(n1){
-  return function(n2) {
+exports.min = function (n1) {
+  return function (n2) {
     return Math.min(n1, n2);
   };
 };
 
-exports.pow = function(n){
-  return function(p) {
+exports.pow = function (n) {
+  return function (p) {
     return Math.pow(n, p);
   };
 };
