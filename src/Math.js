@@ -45,6 +45,12 @@ exports.pow = function (n) {
   };
 };
 
+exports["%"] = function(n) {
+  return function(m) {
+    return n % m;
+  };
+};
+
 exports.round = Math.round;
 
 exports.sin = Math.sin;
