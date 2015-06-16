@@ -151,6 +151,16 @@ tan :: Radians -> Number
 
 Returns the tangent of the argument.
 
+#### `(%)`
+
+``` purescript
+(%) :: Number -> Number -> Number
+```
+
+_left-associative / precedence 7_
+
+Computes the remainder after division, wrapping Javascript's `%` operator.
+
 #### `e`
 
 ``` purescript
@@ -214,5 +224,6 @@ sqrt2 :: Number
 ```
 
 The square root of two, around 1.41421.
+
 
 
