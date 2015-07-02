@@ -45,8 +45,8 @@ exports.pow = function (n) {
   };
 };
 
-exports["%"] = function(n) {
-  return function(m) {
+exports["%"] = function (n) {
+  return function (m) {
     return n % m;
   };
 };
