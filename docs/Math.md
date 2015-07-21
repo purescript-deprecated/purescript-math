@@ -58,7 +58,7 @@ The result is the angle between the positive x axis and  a point `(x, y)`.
 #### `ceil`
 
 ``` purescript
-ceil :: Number -> Number
+ceil :: Number -> Int
 ```
 
 Returns the smallest integer not smaller than the argument.
@@ -82,7 +82,7 @@ Returns `e` exponentiated to the power of the argument.
 #### `floor`
 
 ``` purescript
-floor :: Number -> Number
+floor :: Number -> Int
 ```
 
 Returns the largest integer not larger than the argument.
@@ -122,7 +122,7 @@ Return  the first argument exponentiated to the power of the second argument.
 #### `round`
 
 ``` purescript
-round :: Number -> Number
+round :: Number -> Int
 ```
 
 Returns the integer closest to the argument.
@@ -154,7 +154,7 @@ Returns the tangent of the argument.
 #### `(%)`
 
 ``` purescript
-(%) :: Number -> Number -> Number
+(%) :: Number -> Number -> Int
 ```
 
 _left-associative / precedence 7_
