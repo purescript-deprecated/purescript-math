@@ -25,7 +25,7 @@ foreign import atan :: Number -> Radians
 foreign import atan2 :: Number -> Number -> Radians
 
 -- | Returns the smallest integer not smaller than the argument.
-foreign import ceil :: Number -> Number
+foreign import ceil :: Number -> Int
 
 -- | Returns the cosine of the argument.
 foreign import cos :: Radians -> Number
@@ -34,7 +34,7 @@ foreign import cos :: Radians -> Number
 foreign import exp :: Number -> Number
 
 -- | Returns the largest integer not larger than the argument.
-foreign import floor :: Number -> Number
+foreign import floor :: Number -> Int
 
 -- | Returns the natural logarithm of a number.
 foreign import log :: Number -> Number
@@ -49,7 +49,7 @@ foreign import min :: Number -> Number -> Number
 foreign import pow :: Number -> Number -> Number
 
 -- | Returns the integer closest to the argument.
-foreign import round :: Number -> Number
+foreign import round :: Number -> Int
 
 -- | Returns the sine of the argument.
 foreign import sin :: Radians -> Number
@@ -63,7 +63,7 @@ foreign import tan :: Radians -> Number
 infixl 7 %
 
 -- | Computes the remainder after division, wrapping Javascript's `%` operator.
-foreign import (%) :: Number -> Number -> Number
+foreign import (%) :: Number -> Number -> Int
 
 -- | The base of natural logarithms, *e*, around 2.71828.
 foreign import e :: Number
