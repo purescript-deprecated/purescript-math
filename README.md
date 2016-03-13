@@ -11,6 +11,6 @@ Standard math functions from JavaScript.
 bower install purescript-math
 ```
 
-## Module documentation
+## Documentation
 
-- [Math](docs/Math.md)
+Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-math).

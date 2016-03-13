@@ -2,9 +2,6 @@
   "name": "purescript-math",
   "homepage": "https://github.com/purescript/purescript-math",
   "description": "Math functions",
-  "keywords": [
-    "purescript"
-  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -17,7 +14,6 @@
     "output",
     "test",
     "bower.json",
-    "gulpfile.js",
     "package.json"
   ]
 }
