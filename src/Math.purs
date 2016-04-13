@@ -60,6 +60,10 @@ foreign import sqrt :: Number -> Number
 -- | Returns the tangent of the argument.
 foreign import tan :: Radians -> Number
 
+-- | Truncates the decimal portion of a number. Equivalent to `floor` if the
+-- | number is positive, and `ceil` if the number is negative.
+foreign import trunc :: Number -> Number
+
 infixl 7 %
 
 -- | Computes the remainder after division, wrapping Javascript's `%` operator.

@@ -24,6 +24,10 @@ exports.exp = Math.exp;
 
 exports.floor = Math.floor;
 
+exports.trunc = Math.trunc || function (n) {
+  return n < 0 ? Math.ceil(n) : Math.floor(n);
+};
+
 exports.log = Math.log;
 
 exports.max = function (n1) {
