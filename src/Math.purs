@@ -64,10 +64,10 @@ foreign import tan :: Radians -> Number
 -- | number is positive, and `ceil` if the number is negative.
 foreign import trunc :: Number -> Number
 
-infixl 7 %
-
 -- | Computes the remainder after division, wrapping Javascript's `%` operator.
-foreign import (%) :: Number -> Number -> Number
+foreign import remainder :: Number -> Number -> Number
+
+infixl 7 remainder as %
 
 -- | The base of natural logarithms, *e*, around 2.71828.
 foreign import e :: Number
