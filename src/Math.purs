@@ -54,7 +54,7 @@ foreign import round :: Number -> Number
 -- | Returns the sine of the argument.
 foreign import sin :: Radians -> Number
 
--- | Returns the square root of the argument.
+-- | Returns the non-negative square root of the argument.
 foreign import sqrt :: Number -> Number
 
 -- | Returns the tangent of the argument.
