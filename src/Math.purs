@@ -87,6 +87,9 @@ foreign import log10e :: Number
 -- | The ratio of the circumference of a circle to its diameter, around 3.14159.
 foreign import pi :: Number
 
+-- | The ratio of the circumference of a circle to its radius, around 6.283185.
+foreign import tau :: Number
+
 -- | The Square root of one half, around 0.707107.
 foreign import sqrt1_2 :: Number
 

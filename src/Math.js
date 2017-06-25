@@ -74,6 +74,8 @@ exports.log10e = Math.LOG10E;
 
 exports.pi = Math.PI;
 
+exports.tau = 2 * Math.PI;
+
 exports.sqrt1_2 = Math.SQRT1_2;
 
 exports.sqrt2 = Math.SQRT2;
