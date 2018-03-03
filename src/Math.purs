@@ -11,11 +11,20 @@ foreign import abs :: Number -> Number
 -- | Returns the inverse cosine of the argument.
 foreign import acos :: Number -> Radians
 
+-- | Returns the inverse hyperbolic cosine of the argument.
+foreign import acosh :: Number -> Number
+
 -- | Returns the inverse sine of the argument.
 foreign import asin :: Number -> Radians
 
+-- | Returns the inverse hyperbolic sine of the argument.
+foreign import asinh :: Number -> Number
+
 -- | Returns the inverse tangent of the argument.
 foreign import atan :: Number -> Radians
+
+-- | Returns the inverse hyperbolic tangent of the argument.
+foreign import atanh :: Number -> Number
 
 -- | Four-quadrant tangent inverse. Given the arguments `y` and `x`, returns
 -- | the inverse tangent of `y / x`, where the signs of both arguments are used
@@ -24,23 +33,50 @@ foreign import atan :: Number -> Radians
 -- | The result is the angle between the positive x axis and  a point `(x, y)`.
 foreign import atan2 :: Number -> Number -> Radians
 
+-- | Returns the cube root of the argument.
+foreign import cbrt :: Number -> Number
+
 -- | Returns the smallest integer not smaller than the argument.
 foreign import ceil :: Number -> Number
+
+-- | Returns the number of leading zeroes of a 32-bit integer.
+foreign import clz32 :: Int -> Int
 
 -- | Returns the cosine of the argument.
 foreign import cos :: Radians -> Number
 
+-- | Returns the hyperbolic cosine of the argument.
+foreign import cosh :: Number -> Number
+
 -- | Returns `e` exponentiated to the power of the argument.
 foreign import exp :: Number -> Number
 
+-- | Returns `exp x - 1` for the argument `x`.
+foreign import expm1 :: Number -> Number
+
 -- | Returns the largest integer not larger than the argument.
 foreign import floor :: Number -> Number
+
+-- | Returns the square root of the sum of squares of the arguments.
+foreign import hypot :: Number -> Number -> Number
+
+-- | Returns the square root of the sum of squares of the arguments.
+foreign import hypot3 :: Number -> Number -> Number -> Number
 
 -- | Returns the result of the C-like 32-bit multiplication of the two arguments.
 foreign import imul :: Int -> Int -> Int
 
 -- | Returns the natural logarithm of a number.
 foreign import log :: Number -> Number
+
+-- | Returns the natural logarithm of `1 + x` for a number `x`.
+foreign import log1p :: Number -> Number
+
+-- | Returns the base 10 logarithm of a number.
+foreign import log10 :: Number -> Number
+
+-- | Returns the base 2 logarithm of a number.
+foreign import log2 :: Number -> Number
 
 -- | Returns the largest of two numbers.
 foreign import max :: Number -> Number -> Number
@@ -54,14 +90,23 @@ foreign import pow :: Number -> Number -> Number
 -- | Returns the integer closest to the argument.
 foreign import round :: Number -> Number
 
+-- | Returns the sign of the argument.
+foreign import sign :: Number -> Number
+
 -- | Returns the sine of the argument.
 foreign import sin :: Radians -> Number
+
+-- | Returns the hyperbolic sine of the argument.
+foreign import sinh :: Number -> Number
 
 -- | Returns the square root of the argument.
 foreign import sqrt :: Number -> Number
 
 -- | Returns the tangent of the argument.
 foreign import tan :: Radians -> Number
+
+-- | Returns the hyperbolic tangent of the argument.
+foreign import tanh :: Number -> Number
 
 -- | Truncates the decimal portion of a number. Equivalent to `floor` if the
 -- | number is positive, and `ceil` if the number is negative.
