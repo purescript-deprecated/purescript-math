@@ -1,8 +1,7 @@
 {
   "name": "purescript-math",
   "homepage": "https://github.com/purescript/purescript-math",
-  "description": "Math functions",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "git://github.com/purescript/purescript-math.git"
