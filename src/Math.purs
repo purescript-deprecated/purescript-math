@@ -51,6 +51,9 @@ foreign import pow :: Number -> Number -> Number
 -- | Returns the integer closest to the argument.
 foreign import round :: Number -> Number
 
+-- | Returns the 32-bit floating point number closest to the argument.
+foreign import fround :: Number -> Number
+
 -- | Returns the sine of the argument.
 foreign import sin :: Radians -> Number
 
