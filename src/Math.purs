@@ -36,6 +36,9 @@ foreign import exp :: Number -> Number
 -- | Returns the largest integer not larger than the argument.
 foreign import floor :: Number -> Number
 
+-- | Returns the result of the C-like 32-bit multiplication of the two arguments.
+foreign import imul :: Int -> Int -> Int
+
 -- | Returns the natural logarithm of a number.
 foreign import log :: Number -> Number
 

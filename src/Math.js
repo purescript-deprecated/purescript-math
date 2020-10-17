@@ -24,6 +24,28 @@ exports.exp = Math.exp;
 
 exports.floor = Math.floor;
 
+function nativeImul(a) {
+  return function (b) {
+    return Math.imul(a, b);
+  };
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/imul
+function emulatedImul(a) {
+  /*jshint bitwise: false*/
+  return function (b) {
+    var ah = a >>> 16 & 0xffff;
+    var al = a & 0xffff;
+    var bh = b >>> 16 & 0xffff;
+    var bl = b & 0xffff;
+    // the shift by 0 fixes the sign on the high part
+    // the final |0 converts the unsigned value into a signed value
+    return al * bl + (ah * bl + al * bh << 16 >>> 0) | 0;
+  };
+}
+
+exports.imul = Math.imul ? nativeImul : emulatedImul;
+
 exports.trunc = Math.trunc || function (n) {
   return n < 0 ? Math.ceil(n) : Math.floor(n);
 };
