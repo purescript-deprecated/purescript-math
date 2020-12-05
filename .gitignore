@@ -2,7 +2,7 @@
 !/.gitignore
 !/.jscsrc
 !/.jshintrc
-!/.travis.yml
+!/.github/
 /bower_components/
 /node_modules/
 /output/
