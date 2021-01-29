@@ -9,6 +9,7 @@ Breaking changes:
 
 New features:
 - Added `imul` (#18)
+- Added the golden ratio `phi` (#29)
 
 Bugfixes:
 
