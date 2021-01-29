@@ -93,6 +93,10 @@ foreign import pi :: Number
 -- | The ratio of the circumference of a circle to its radius, around 6.283185.
 foreign import tau :: Number
 
+-- | The golden ratio, *φ*, around 1.61803. Two quantities `a` and `b` are said
+-- | to be in the *golden ratio φ* if `(a + b) / a = a / b = φ`.
+foreign import phi :: Number
+
 -- | The Square root of one half, around 0.707107.
 foreign import sqrt1_2 :: Number
 
