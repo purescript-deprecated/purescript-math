@@ -2,27 +2,27 @@
 
 // module Math
 
-exports.abs = Math.abs;
+export var abs = Math.abs;
 
-exports.acos = Math.acos;
+export var acos = Math.acos;
 
-exports.asin = Math.asin;
+export var asin = Math.asin;
 
-exports.atan = Math.atan;
+export var atan = Math.atan;
 
-exports.atan2 = function (y) {
+export var atan2 = function (y) {
   return function (x) {
     return Math.atan2(y, x);
   };
 };
 
-exports.ceil = Math.ceil;
+export var ceil = Math.ceil;
 
-exports.cos = Math.cos;
+export var cos = Math.cos;
 
-exports.exp = Math.exp;
+export var exp = Math.exp;
 
-exports.floor = Math.floor;
+export var floor = Math.floor;
 
 function nativeImul(a) {
   return function (b) {
@@ -44,60 +44,60 @@ function emulatedImul(a) {
   };
 }
 
-exports.imul = Math.imul ? nativeImul : emulatedImul;
+export var imul = Math.imul ? nativeImul : emulatedImul;
 
-exports.trunc = Math.trunc || function (n) {
+export var trunc = Math.trunc || function (n) {
   return n < 0 ? Math.ceil(n) : Math.floor(n);
 };
 
-exports.log = Math.log;
+export var log = Math.log;
 
-exports.max = function (n1) {
+export var max = function (n1) {
   return function (n2) {
     return Math.max(n1, n2);
   };
 };
 
-exports.min = function (n1) {
+export var min = function (n1) {
   return function (n2) {
     return Math.min(n1, n2);
   };
 };
 
-exports.pow = function (n) {
+export var pow = function (n) {
   return function (p) {
     return Math.pow(n, p);
   };
 };
 
-exports.remainder = function (n) {
+export var remainder = function (n) {
   return function (m) {
     return n % m;
   };
 };
 
-exports.round = Math.round;
+export var round = Math.round;
 
-exports.sin = Math.sin;
+export var sin = Math.sin;
 
-exports.sqrt = Math.sqrt;
+export var sqrt = Math.sqrt;
 
-exports.tan = Math.tan;
+export var tan = Math.tan;
 
-exports.e = Math.E;
+export var e = Math.E;
 
-exports.ln2 = Math.LN2;
+export var ln2 = Math.LN2;
 
-exports.ln10 = Math.LN10;
+export var ln10 = Math.LN10;
 
-exports.log2e = Math.LOG2E;
+export var log2e = Math.LOG2E;
 
-exports.log10e = Math.LOG10E;
+export var log10e = Math.LOG10E;
 
-exports.pi = Math.PI;
+export var pi = Math.PI;
 
-exports.tau = 2 * Math.PI;
+export var tau = 2 * Math.PI;
 
-exports.sqrt1_2 = Math.SQRT1_2;
+export var sqrt1_2 = Math.SQRT1_2;
 
-exports.sqrt2 = Math.SQRT2;
+export var sqrt2 = Math.SQRT2;
