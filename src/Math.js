@@ -2,27 +2,27 @@
 
 // module Math
 
-export var abs = Math.abs;
+export const abs = Math.abs;
 
-export var acos = Math.acos;
+export const acos = Math.acos;
 
-export var asin = Math.asin;
+export const asin = Math.asin;
 
-export var atan = Math.atan;
+export const atan = Math.atan;
 
-export var atan2 = function (y) {
+export const atan2 = function (y) {
   return function (x) {
     return Math.atan2(y, x);
   };
 };
 
-export var ceil = Math.ceil;
+export const ceil = Math.ceil;
 
-export var cos = Math.cos;
+export const cos = Math.cos;
 
-export var exp = Math.exp;
+export const exp = Math.exp;
 
-export var floor = Math.floor;
+export const floor = Math.floor;
 
 function nativeImul(a) {
   return function (b) {
@@ -44,60 +44,60 @@ function emulatedImul(a) {
   };
 }
 
-export var imul = Math.imul ? nativeImul : emulatedImul;
+export const imul = Math.imul ? nativeImul : emulatedImul;
 
-export var trunc = Math.trunc || function (n) {
+export const trunc = Math.trunc || function (n) {
   return n < 0 ? Math.ceil(n) : Math.floor(n);
 };
 
-export var log = Math.log;
+export const log = Math.log;
 
-export var max = function (n1) {
+export const max = function (n1) {
   return function (n2) {
     return Math.max(n1, n2);
   };
 };
 
-export var min = function (n1) {
+export const min = function (n1) {
   return function (n2) {
     return Math.min(n1, n2);
   };
 };
 
-export var pow = function (n) {
+export const pow = function (n) {
   return function (p) {
     return Math.pow(n, p);
   };
 };
 
-export var remainder = function (n) {
+export const remainder = function (n) {
   return function (m) {
     return n % m;
   };
 };
 
-export var round = Math.round;
+export const round = Math.round;
 
-export var sin = Math.sin;
+export const sin = Math.sin;
 
-export var sqrt = Math.sqrt;
+export const sqrt = Math.sqrt;
 
-export var tan = Math.tan;
+export const tan = Math.tan;
 
-export var e = Math.E;
+export const e = Math.E;
 
-export var ln2 = Math.LN2;
+export const ln2 = Math.LN2;
 
-export var ln10 = Math.LN10;
+export const ln10 = Math.LN10;
 
-export var log2e = Math.LOG2E;
+export const log2e = Math.LOG2E;
 
-export var log10e = Math.LOG10E;
+export const log10e = Math.LOG10E;
 
-export var pi = Math.PI;
+export const pi = Math.PI;
 
-export var tau = 2 * Math.PI;
+export const tau = 2 * Math.PI;
 
-export var sqrt1_2 = Math.SQRT1_2;
+export const sqrt1_2 = Math.SQRT1_2;
 
-export var sqrt2 = Math.SQRT2;
+export const sqrt2 = Math.SQRT2;
