@@ -1,5 +1,3 @@
-"use strict";
-
 // module Math
 
 export const abs = Math.abs;
