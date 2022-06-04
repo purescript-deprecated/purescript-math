@@ -1,17 +1,5 @@
-# purescript-math
+# DEPRECATED
 
-[![Latest release](http://img.shields.io/github/release/purescript/purescript-math.svg)](https://github.com/purescript/purescript-math/releases)
-[![Build status](https://github.com/purescript/purescript-math/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-math/actions?query=workflow%3ACI+branch%3Amaster)
-[![Pursuit](https://pursuit.purescript.org/packages/purescript-math/badge)](https://pursuit.purescript.org/packages/purescript-math)
+`purescript-math` is deprecated. Functions and values from this library are avaliable in the [`purescript-numbers`](https://github.com/purescript/purescript-numbers) and [`purescript-integers`](https://github.com/purescript/purescript-integers) libraries.
 
-Standard math functions from JavaScript.
-
-## Installation
-
-```
-spago install math
-```
-
-## Documentation
-
-Module documentation is [published on Pursuit](http://pursuit.purescript.org/packages/purescript-math).
+The [original releases up to v3.0.0](https://github.com/purescript-deprecated/purescript-math/releases) of this library are still available and will work with compiler versions prior to PureScript v0.15.x.
